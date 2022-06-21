@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Compilation Test",
+      "setup": "",
+      "run": "javac Main.java",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Run Test",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Henry Scheible 17 2003 2021",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #1",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Henry Scheible 17",
+      "input": "",
+      "output": "Hello, I am Henry Scheible, and I am 17 years old\r\nfalse\r\nfalse\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #2",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Jeremy Smith 21",
+      "input": "",
+      "output": "Hello, I am Jeremy Smith, and I am 21 years old\r\nfalse\r\nfalse\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Accuracy Test #3",
+      "setup": "rm -rf ./*.class",
+      "run": "java Main.java Henry Henry 10",
+      "input": "",
+      "output": "Hello, I am Henry Henry, and I am 10 years old\r\ntrue\r\ntrue\r\ntrue",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
