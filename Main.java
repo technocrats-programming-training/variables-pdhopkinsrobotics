@@ -9,7 +9,7 @@ public class Main {
         } catch (NumberFormatException ex) {
             ex.printStackTrace();
         }
-        String firstMessage = "Hello, I am " + firstName + " " + lastName + ", and I am " + age + " years old.";
+        String firstMessage = "Hello, I am " + firstName + " " + lastName + ", and I am " + age + " years old";
 
         // AGE
         int checkEven = age % 2;
