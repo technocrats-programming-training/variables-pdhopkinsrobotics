@@ -9,7 +9,7 @@ public class Main {
         } catch (NumberFormatException ex) {
             ex.printStackTrace();
         }
-        String firstMessage = "Hello, I am " + firstName + " " + lastName + ", and I am " + age + "years old.";
+        String firstMessage = "Hello, I am " + firstName + " " + lastName + ", and I am " + age + " years old.";
 
         // AGE
         int checkEven = age % 2;
@@ -21,14 +21,23 @@ public class Main {
             {secondMessage = "My age is NOT even.";}
         
       // NAMES
-        boolean isNamesSame = firstName == lastName;
-        
+      boolean isNamesSame = firstName.equals(lastName);
+        //System.out.println (isNamesSame);  
         String thirdMessage;
       
         if (isNamesSame) {thirdMessage = "The names are the same.";}
         else
             {thirdMessage = "The names are NOT the same.";}
-        
+
+      // Greater than 0
+      boolean isAgeGreat = age > 0;
+        //System.out.println (isNamesSame);  
+        String fourthMessage;
+      
+        if (isAgeGreat) {fourthMessage = "The age is greater than 0.";}
+        else
+            {fourthMessage = "The age is NOT greater than 0.";}
+
         // Print out the following string: "Hello, I am <firstName> <lastName>, and I am <age> years old"
         System.out.println (firstMessage);
         // Print out whether age is even
@@ -36,8 +45,9 @@ public class Main {
         System.out.println (secondMessage);
         // Print out whether firstName equals lastName
         System.out.println (thirdMessage);
-
+        
         // Print out whether age is greater than 0
-
+        System.out.println (fourthMessage);
+        
     }
 }
