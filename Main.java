@@ -14,40 +14,40 @@ public class Main {
         // AGE
         int checkEven = age % 2;
         boolean isEven = checkEven == 0;
-        String secondMessage;
+        //String secondMessage;
       
-        if (isEven) {secondMessage = "My age is even.";}
-        else
-            {secondMessage = "My age is NOT even.";}
+        //if (isEven) {secondMessage = "My age is even.";}
+        //else
+        //    {secondMessage = "My age is NOT even.";}
         
       // NAMES
       boolean isNamesSame = firstName.equals(lastName);
         //System.out.println (isNamesSame);  
-        String thirdMessage;
+        //String thirdMessage;
       
-        if (isNamesSame) {thirdMessage = "The names are the same.";}
-        else
-            {thirdMessage = "The names are NOT the same.";}
+        //if (isNamesSame) {thirdMessage = "The names are the same.";}
+        //else
+        //    {thirdMessage = "The names are NOT the same.";}
 
       // Greater than 0
       boolean isAgeGreat = age > 0;
         //System.out.println (isNamesSame);  
-        String fourthMessage;
+        //String fourthMessage;
       
-        if (isAgeGreat) {fourthMessage = "The age is greater than 0.";}
-        else
-            {fourthMessage = "The age is NOT greater than 0.";}
+        //if (isAgeGreat) {fourthMessage = "The age is greater than 0.";}
+        //else
+        //    {fourthMessage = "The age is NOT greater than 0.";}
 
         // Print out the following string: "Hello, I am <firstName> <lastName>, and I am <age> years old"
         System.out.println (firstMessage);
         // Print out whether age is even
         //System.out.println (checkEven);
-        System.out.println (secondMessage);
+        System.out.println (isEven);
         // Print out whether firstName equals lastName
-        System.out.println (thirdMessage);
+        System.out.println (isNamesSame);
         
         // Print out whether age is greater than 0
-        System.out.println (fourthMessage);
+        System.out.println (isAgeGreat);
         
     }
 }
